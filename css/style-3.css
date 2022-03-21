@@ -1,0 +1,161 @@
+@import url("https://fonts.googleapis.com/css2?family=Hubballi&display=swap");
+
+:root {
+  --main-font: "Hubballi", cursive;
+  --green: #292d24;
+  --gray: #e1e1df;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  background-color: var(--gray);
+}
+
+.landing-page {
+  position: relative;
+  min-height: 70vh;
+  background-image: url("../imgs/6.jpg");
+  border-radius: 10px;
+}
+
+.landing-page .title {
+  position: absolute;
+  top: 50%;
+  margin-top: -70px;
+  margin-left: 200px;
+  color: white;
+  text-shadow: 2px 2px black;
+  font-family: var(--main-font);
+  font-size: 1.5rem;
+}
+
+.navbar {
+  text-align: center;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  background-color: var(--green);
+  margin-top: 10px;
+  font-family: var(--main-font);
+  border-radius: 10px;
+}
+
+.navbar a {
+  color: var(--gray);
+  padding: 5px 78px;
+  text-decoration: none;
+}
+.navbar a:hover {
+  color: rgb(10, 95, 10);
+}
+
+.navbar a:not(:last-child) {
+  border-right: 1px solid black;
+}
+
+.main-menu,
+.block {
+  width: 190px;
+  color: var(--gray);
+  padding-bottom: 5px;
+  margin-left: 4px;
+  font-family: var(--main-font);
+  position: absolute;
+}
+
+.main-menu h3,
+.block h3 {
+  padding-left: 20px;
+  color: black;
+}
+
+.main-menu .items {
+  padding-left: 25px;
+  text-decoration: underline;
+  background-color: var(--green);
+  padding-bottom: 4px;
+}
+
+.block p {
+  padding-left: 10px;
+  background-color: var(--green);
+  padding-bottom: 4px;
+  padding-right: 1px;
+}
+.block p span {
+  display: block;
+}
+
+.gallery {
+  width: 69%;
+  margin: 20px 400px;
+  font-family: var(--main-font);
+}
+.sub-serv {
+  margin: 20px 400px;
+  width: 400px;
+  border-right: 1px solid black;
+  padding-right: 23px;
+  position: relative;
+  font-family: var(--main-font);
+}
+
+.sub-serv .service {
+  position: absolute;
+  top: -8%;
+  margin-left: 450px;
+  width: 395px;
+}
+
+.contact {
+  border-radius: 10px;
+  font-family: var(--main-font);
+}
+
+.contact .container .left .radio {
+  display: flex;
+  align-items: center;
+}
+
+.contact h2 {
+  font-weight: bold;
+  font-size: 30px;
+  color: var(--gray);
+  margin: 0 0 60px;
+  text-align: center;
+  background-color: var(--green);
+  border-radius: 10px;
+}
+.contact form {
+  max-width: 800px;
+  margin: auto;
+}
+.contact form .left {
+  float: left;
+  width: 49%;
+}
+.contact form .right {
+  float: right;
+  width: 49%;
+}
+.contact form input {
+  height: 20px;
+}
+.contact form textarea {
+  height: 100px;
+}
+.clearfix {
+  clear: both;
+}
+.footer p {
+  background-color: #333;
+  color: var(--gray);
+  padding: 1px;
+  text-align: center;
+  font-family: var(--main-font);
+  border-radius: 10px;
+}
